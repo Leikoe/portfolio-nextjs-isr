@@ -2,6 +2,9 @@
 module.exports = {
   // darkMode: 'class',
   content: ['./components/**/*.tsx', './pages/**/*.tsx'],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
   theme: {
     extend: {
       colors: {
@@ -37,5 +40,4 @@ module.exports = {
       },
     },
   },
-  plugins: [],
 }
