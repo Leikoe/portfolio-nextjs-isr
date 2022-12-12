@@ -1,14 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // darkMode: 'class',
   content: ['./components/**/*.tsx', './pages/**/*.tsx'],
   theme: {
     extend: {
       colors: {
+        'background': '#FFF',
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
+        'accent-3': '#999',
+        'accent-4': '#888',
+        'accent-5': '#666',
+        'accent-6': '#444',
         'accent-7': '#333',
-        success: '#0070f3',
-        cyan: '#79FFE1',
+        'accent-8': '#111',
+        'foreground': '#000'
       },
       spacing: {
         28: '7rem',

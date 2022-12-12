@@ -1,23 +1,42 @@
-import { CMS_NAME } from '../lib/constants'
-
 const Intro = () => {
   return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
-      <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-        Blog.
-      </h1>
-      <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        A statically generated blog example using{' '}
-        <a
-          href="https://nextjs.org/"
-          className="underline hover:text-blue-600 duration-200 transition-colors"
+    <>
+      <div className="flex flex-col-reverse sm:flex-row items-center pt-12">
+        <div className="flex flex-col pr-8">
+          <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-1 text-black dark:text-white">
+            Léo Paillé
+          </h1>
+          <h2 className="text-gray-700 dark:text-gray-200 mb-4">
+            Backend developer based in Bordeaux,France
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 mb-16">
+            I'm a french backend developper. I started algorithms at 8 and
+            started coding at 10 years old.
+          </p>
+        </div>
+        <div
+          className="flex basis-1/3"
+          style={{ imageRendering: "crisp-edges" }}
         >
-          Next.js
-        </a>{' '}
-        and {CMS_NAME}.
-      </h4>
-    </section>
-  )
-}
+          <img
+            src="/favicon/favicon.ico"
+            alt="My profile picture"
+            height={176}
+            width={176}
+          />
+          {/* <Image
+            alt="My profile picture"
+            height={176}
+            width={176}
+            src="/favicon/favicon.ico"
+            sizes="30vw"
+            quality={100}
+            priority
+          /> */}
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Intro
+export default Intro;
